@@ -13,6 +13,7 @@ CREATE TABLE IF NOT EXISTS agents (
   image_uri        TEXT,
   categories       TEXT[]  DEFAULT '{}',
   services         JSONB   DEFAULT '[]',
+  external_stats   JSONB   DEFAULT NULL,
   active           BOOLEAN DEFAULT true,
   registered_block BIGINT,
   registered_at    BIGINT,
@@ -23,6 +24,7 @@ CREATE TABLE IF NOT EXISTS agents (
 -- Migrate existing schema if needed
 ALTER TABLE agents ADD COLUMN IF NOT EXISTS network TEXT NOT NULL DEFAULT 'base_sepolia';
 ALTER TABLE agents ADD COLUMN IF NOT EXISTS source TEXT NOT NULL DEFAULT 'local';
+ALTER TABLE agents ADD COLUMN IF NOT EXISTS external_stats JSONB DEFAULT NULL;
 
 DO $$
 BEGIN
