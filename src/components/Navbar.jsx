@@ -56,6 +56,22 @@ export default function Navbar() {
           ))}
         </div>
 
+        {/* CA + BUY BUTTON — uncomment and fill in CA & link when ready
+        <div className="hidden lg:flex items-center gap-3">
+          <span className="font-mono text-xs text-gray-500 border-2 border-dashed border-gray-400 px-3 py-1.5 select-all tracking-wider">
+            CA: 0x000...0000
+          </span>
+          <a
+            href="https://REPLACE_WITH_BUY_LINK"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-yellow border-2 md:border-4 border-black font-mono font-bold uppercase px-3 py-1.5 md:px-6 md:py-2 text-xs md:text-base shadow-[2px_2px_0px_rgba(0,0,0,1)] md:shadow-brutal-sm hover:translate-y-1 hover:translate-x-1 hover:shadow-none transition-all"
+          >
+            Buy $TRUST
+          </a>
+        </div>
+        */}
+
         <button className="bg-yellow border-2 md:border-4 border-black font-mono font-bold uppercase px-3 py-1.5 md:px-6 md:py-2 text-xs md:text-base shadow-[2px_2px_0px_rgba(0,0,0,1)] md:shadow-brutal-sm hover:translate-y-1 hover:translate-x-1 hover:shadow-none transition-all touch-manipulation min-h-[48px] md:min-h-0 min-w-[70px] md:min-w-0 flex items-center justify-center">
           <span className="md:hidden">Connect</span>
           <span className="hidden md:inline">Connect_Wallet</span>
