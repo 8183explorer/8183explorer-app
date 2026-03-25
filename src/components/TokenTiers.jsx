@@ -248,7 +248,7 @@ export default function TokenTiers() {
           ))}
         </div>
 
-        {/* Alert banner */}
+        {/* Alert banner — temporarily hidden
         <div className="mt-16 bg-white border-4 border-black p-6 flex flex-col md:flex-row items-center justify-between shadow-brutal max-w-4xl mx-auto">
           <div className="flex items-center gap-4 mb-4 md:mb-0">
             <div className="w-12 h-12 bg-danger flex items-center justify-center border-2 border-black animate-pulse">
@@ -270,6 +270,7 @@ export default function TokenTiers() {
             Join Whitelist →
           </button>
         </div>
+        */}
       </div>
 
       {/* Modal */}
