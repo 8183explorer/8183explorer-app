@@ -3,27 +3,24 @@ import { useState } from 'react';
 
 const footerLinks = {
   Protocol: [
-    { label: 'Terminal',     to: '/database'   },
-    { label: 'API Docs',     to: '/docs'       },
-    { label: 'Methodology',  to: '/methodology'},
-    { label: 'Submit Agent', href: '#'         },
+    { label: 'Terminal',    to: '/database'   },
+    { label: 'API Docs',    to: '/docs'       },
+    { label: 'Methodology', to: '/methodology'},
   ],
   Token: [
     { label: 'Buy $TRUST',  href: 'https://www.bankr.bot/launches/0xd939D292B684982664f1ECe8B882aFb05f69DbA3' },
-    { label: 'Staking',     href: '#' },
-    { label: 'Governance',  href: '#' },
+    { label: 'Staking',     to: '/soon' },
+    { label: 'Governance',  to: '/soon' },
     { label: 'Contract',    href: 'https://basescan.org/address/0xd939D292B684982664f1ECe8B882aFb05f69DbA3' },
   ],
   Socials: [
     { label: 'Twitter // X', href: 'https://x.com/8183explorer' },
-    { label: 'Discord',      href: '#' },
-    { label: 'Telegram',     href: '#' },
-    { label: 'Github',       href: '#' },
+    { label: 'Github',       href: 'https://github.com/8183explorer/8183explorer-app' },
   ],
   Legal: [
-    { label: 'Terms',      href: '#' },
-    { label: 'Privacy',    href: '#' },
-    { label: 'Disclaimer', href: '#' },
+    { label: 'Terms',      to: '/terms'      },
+    { label: 'Privacy',    to: '/privacy'    },
+    { label: 'Disclaimer', to: '/disclaimer' },
   ],
 };
 

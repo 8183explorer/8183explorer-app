@@ -9,6 +9,10 @@ import MethodologyPage from './components/MethodologyPage';
 import SearchResultsPage from './components/SearchResultsPage';
 import DocsPage from './components/DocsPage';
 import PreloadScreen from './components/PreloadScreen';
+import SoonPage from './components/SoonPage';
+import TermsPage from './components/TermsPage';
+import PrivacyPage from './components/PrivacyPage';
+import DisclaimerPage from './components/DisclaimerPage';
 
 const router = createBrowserRouter([
   { path: '/',               element: <HomePage /> },
@@ -19,6 +23,10 @@ const router = createBrowserRouter([
   { path: '/methodology',    element: <MethodologyPage /> },
   { path: '/search',         element: <SearchResultsPage /> },
   { path: '/docs',           element: <DocsPage /> },
+  { path: '/soon',           element: <SoonPage /> },
+  { path: '/terms',          element: <TermsPage /> },
+  { path: '/privacy',        element: <PrivacyPage /> },
+  { path: '/disclaimer',     element: <DisclaimerPage /> },
 ]);
 
 export default function App() {
