@@ -103,8 +103,23 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <div className="mt-8">
-              <button className="bg-yellow text-black border-4 border-white font-mono font-bold uppercase px-6 py-4 shadow-[4px_4px_0px_rgba(255,255,255,1)] hover:translate-y-1 hover:translate-x-1 hover:shadow-none transition-all w-full text-center min-h-[64px]">
+            <div className="mt-8 flex flex-col gap-3">
+              <div className="border-2 border-dashed border-gray-600 px-4 py-3 flex flex-col gap-1">
+                <span className="font-mono text-xs text-gray-500 uppercase">Contract Address</span>
+                <span className="font-mono text-xs text-gray-300 select-all break-all">
+                  0x14609a48396b240d7d2bC2F03966F0CEcd4078C6
+                </span>
+              </div>
+              <a
+                href="https://app.virtuals.io/virtuals/68323"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="bg-yellow text-black border-4 border-white font-mono font-bold uppercase px-6 py-4 shadow-[4px_4px_0px_rgba(255,255,255,1)] hover:translate-y-1 hover:translate-x-1 hover:shadow-none transition-all w-full text-center min-h-[64px] flex items-center justify-center"
+              >
+                Buy $TRUST
+              </a>
+              <button className="bg-transparent text-white border-4 border-white font-mono font-bold uppercase px-6 py-4 hover:bg-white hover:text-black transition-all w-full text-center min-h-[64px]">
                 Connect Wallet
               </button>
             </div>
