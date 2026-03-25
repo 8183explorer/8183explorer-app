@@ -5,10 +5,10 @@ import { Copy, Check, TrendingUp, Share2, Shield, Zap, Search } from 'lucide-rea
 
 export default function TrustTokenPage() {
   const [copied, setCopied] = useState(false);
-  const contractAddress = "0x8faB...4E1C";
+  const contractAddress = "0x14609a48396b240d7d2bC2F03966F0CEcd4078C6";
 
   const handleCopy = () => {
-    navigator.clipboard.writeText("0x8faB1234567890ABCDEF1234567890ABCDEF4E1C");
+    navigator.clipboard.writeText("0x14609a48396b240d7d2bC2F03966F0CEcd4078C6");
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -89,9 +89,14 @@ export default function TrustTokenPage() {
               <li className="flex gap-4 items-start"><Check className="text-[#FF3333] w-5 h-5 shrink-0" strokeWidth={3} /> Red flag alerts</li>
               <li className="flex gap-4 items-start"><Check className="text-black w-5 h-5 shrink-0" strokeWidth={3} /> Export data</li>
             </ul>
-            <button className="bg-[#FFD600] border-4 border-black py-4 font-mono font-black text-lg uppercase shadow-[4px_4px_0px_0px_#000] hover:shadow-none hover:translate-x-[4px] hover:translate-y-[4px] transition-all">
+            <a
+              href="https://app.virtuals.io/virtuals/68323"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#FFD600] border-4 border-black py-4 font-mono font-black text-lg uppercase shadow-[4px_4px_0px_0px_#000] hover:shadow-none hover:translate-x-[4px] hover:translate-y-[4px] transition-all text-center"
+            >
               BUY $TRUST
-            </button>
+            </a>
           </div>
 
           {/* PREMIUM TIER */}
@@ -110,9 +115,14 @@ export default function TrustTokenPage() {
               <li className="flex gap-4 items-start"><Check className="text-black w-5 h-5 shrink-0" strokeWidth={3} /> API access</li>
               <li className="flex gap-4 items-start"><Check className="text-black w-5 h-5 shrink-0" strokeWidth={3} /> Priority support</li>
             </ul>
-            <button className="bg-black text-white border-4 border-black py-4 font-mono font-black text-lg uppercase shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] hover:shadow-none hover:translate-x-[4px] hover:translate-y-[4px] transition-all">
+            <a
+              href="https://app.virtuals.io/virtuals/68323"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-black text-white border-4 border-black py-4 font-mono font-black text-lg uppercase shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] hover:shadow-none hover:translate-x-[4px] hover:translate-y-[4px] transition-all text-center"
+            >
               BUY $TRUST
-            </button>
+            </a>
           </div>
         </section>
 
@@ -162,10 +172,15 @@ export default function TrustTokenPage() {
           
           <h2 className="font-mono text-5xl md:text-7xl font-black uppercase tracking-tighter relative z-10">GET $TRUST ON VIRTUALS</h2>
           
-          <button className="bg-[#FFD600] text-black border-4 border-transparent px-10 py-5 font-mono text-3xl font-black uppercase hover:bg-white hover:scale-105 transition-all flex items-center gap-4 relative z-10 shadow-[8px_8px_0px_0px_rgba(255,255,255,0.2)]">
+          <a
+            href="https://app.virtuals.io/virtuals/68323"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#FFD600] text-black border-4 border-transparent px-10 py-5 font-mono text-3xl font-black uppercase hover:bg-white hover:scale-105 transition-all flex items-center gap-4 relative z-10 shadow-[8px_8px_0px_0px_rgba(255,255,255,0.2)]"
+          >
             TRADE ON VIRTUALS
             <Share2 className="w-8 h-8" strokeWidth={3} />
-          </button>
+          </a>
           
           <div className="flex flex-col sm:flex-row items-center gap-4 mt-8 relative z-10">
             <span className="font-mono text-sm font-bold text-gray-400 uppercase tracking-widest">CONTRACT_ADDRESS:</span>
