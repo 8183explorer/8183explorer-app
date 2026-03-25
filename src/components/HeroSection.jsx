@@ -56,6 +56,24 @@ export default function HeroSection() {
           </button>
         </div>
 
+        {/* Token Bar */}
+        <div className="w-full max-w-4xl flex flex-col sm:flex-row items-stretch sm:items-center gap-3 mb-8 md:mb-10">
+          <div className="flex-1 flex flex-col sm:flex-row items-start sm:items-center gap-1 sm:gap-3 border-2 border-dashed border-gray-400 px-4 py-3">
+            <span className="font-mono text-[10px] text-gray-500 uppercase font-bold whitespace-nowrap">$TRUST CA</span>
+            <span className="font-mono text-xs text-gray-700 select-all break-all tracking-wide">
+              0x14609a48396b240d7d2bC2F03966F0CEcd4078C6
+            </span>
+          </div>
+          <a
+            href="https://app.virtuals.io/virtuals/68323"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-yellow border-4 border-black font-mono font-bold uppercase px-6 py-3 text-sm shadow-brutal-sm hover:translate-y-1 hover:translate-x-1 hover:shadow-none transition-all whitespace-nowrap text-center"
+          >
+            Buy $TRUST
+          </a>
+        </div>
+
         {/* Stats */}
         <div className="grid grid-cols-3 gap-2 md:gap-8 max-w-5xl">
           {stats.map((stat) => (
