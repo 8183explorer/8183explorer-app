@@ -86,6 +86,9 @@ const NAV = [
     { id:'tokenomics', label:'Tokenomics' },
     { id:'holder-benefits', label:'Holder Benefits' },
   ]},
+  { id:'for-agents', label:'FOR AGENTS', defaultOpen:false, items:[
+    { id:'agent-skills', label:'Agent Skills File' },
+  ]},
   { id:'faq-section', label:'FAQ', defaultOpen:false, items:[
     { id:'faq', label:'FAQ' },
   ]},
@@ -518,6 +521,48 @@ Explorer: basescan.org/address/0x8183...9A2B`}/>
         <div style={{ padding:'12px 16px', fontFamily:'monospace', fontSize:13, fontWeight:600, lineHeight:1.7, background:'#fff' }}>A: {a}</div>
       </div>
     ))}
+  </div>
+),
+
+'agent-skills': () => (
+  <div>
+    <p style={p}><code style={ic}>skills.md</code> is a machine-readable onboarding file designed to be dropped directly into an AI agent's context window. It gives any incoming agent the full picture of this codebase — API routes, data shapes, routing rules, component hierarchy, and known issues — without reading source code.</p>
+    <CL t="info">Intended for AI agents and builders integrating with 8183Explorer. Humans can use it too, but the format is optimised for LLM consumption.</CL>
+
+    <h2 style={h2s}>What's Inside</h2>
+    <Tbl heads={['Section','Contents']} rows={[
+      ['How to Run','Docker + Bun API + Vite frontend startup commands'],
+      ['Tech Stack','Exact versions of all dependencies'],
+      ['Repo Structure','Every directory and file with its purpose'],
+      ['API Reference','All endpoints, query params, and full JSON response shapes'],
+      ['Data Flow','Hook → endpoint → normalizer → component mapping'],
+      ['Normalized Shapes','Exact fields returned by each normalizer function'],
+      ['Routing Rules','Critical: use uid not agentId for /agent/:uid routing'],
+      ['TrustScore Formula','Score components, PENALTY_MAP, badge thresholds'],
+      ['Contracts','All deployed addresses on Base Sepolia and Base Mainnet'],
+      ['Known Issues','Tracked bugs with file locations and priority'],
+      ['Integration Checklist','What to verify before making any changes'],
+    ]}/>
+
+    <h2 style={h2s}>How to Use It</h2>
+    <p style={p}>Option A — paste directly into a system prompt or user message for any LLM-based agent working on this repo:</p>
+    <Code lang="bash" code={`curl https://8183explorer.xyz/skills.md | pbcopy
+# then paste into your agent's context`}/>
+    <p style={p}>Option B — reference the hosted file URL directly in your agent's tool call or RAG pipeline:</p>
+    <Code lang="bash" code={`GET https://8183explorer.xyz/skills.md`}/>
+    <p style={p}>Option C — the file is included as a static asset in the frontend build at <code style={ic}>/skills.md</code>. Useful for agents that can fetch from the live deployment.</p>
+
+    <h2 style={h2s}>Download</h2>
+    <div style={{ display:'flex', gap:12, flexWrap:'wrap', marginBottom:24 }}>
+      <a href="/skills.md" target="_blank" rel="noopener noreferrer" style={{ display:'inline-flex', alignItems:'center', gap:8, background:'#FACC15', border:'3px solid #000', fontFamily:'monospace', fontWeight:900, fontSize:14, textTransform:'uppercase', padding:'12px 20px', boxShadow:'4px 4px 0px 0px rgba(0,0,0,1)', textDecoration:'none', color:'#000', transition:'all 0.15s' }}
+        onMouseOver={e => { e.currentTarget.style.transform='translate(4px,4px)'; e.currentTarget.style.boxShadow='none'; }}
+        onMouseOut={e => { e.currentTarget.style.transform='none'; e.currentTarget.style.boxShadow='4px 4px 0px 0px rgba(0,0,0,1)'; }}
+      >
+        ↓ Download skills.md
+      </a>
+    </div>
+
+    <CL t="warning">The skills.md is updated manually when significant API or structural changes are made. If you notice a discrepancy with the actual codebase, the source code is authoritative.</CL>
   </div>
 ),
 

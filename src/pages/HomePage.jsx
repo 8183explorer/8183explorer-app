@@ -5,6 +5,7 @@ import VerificationSection from '../components/VerificationSection';
 import TrustScoreSection from '../components/TrustScoreSection';
 import MonitoredEntities from '../components/MonitoredEntities';
 import TokenTiers from '../components/TokenTiers';
+import AgentOnboardSection from '../components/AgentOnboardSection';
 import Footer from '../components/Footer';
 
 export default function HomePage() {
@@ -17,6 +18,7 @@ export default function HomePage() {
       <TrustScoreSection />
       <MonitoredEntities />
       <TokenTiers />
+      <AgentOnboardSection />
       <Footer />
     </div>
   );
