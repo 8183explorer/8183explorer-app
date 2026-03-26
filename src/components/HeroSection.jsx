@@ -61,11 +61,11 @@ export default function HeroSection() {
           <div className="flex-1 flex flex-col sm:flex-row items-start sm:items-center gap-1 sm:gap-3 border-2 border-dashed border-gray-400 px-4 py-3">
             <span className="font-mono text-[10px] text-gray-500 uppercase font-bold whitespace-nowrap">$TRUST CA</span>
             <span className="font-mono text-xs text-gray-700 select-all break-all tracking-wide">
-              0x14609a48396b240d7d2bC2F03966F0CEcd4078C6
+              0x0F261809A866F9C26fea70ba37d820651efeABA3
             </span>
           </div>
           <a
-            href="https://app.virtuals.io/virtuals/68323"
+            href="https://www.bankr.bot/launches/0x0F261809A866F9C26fea70ba37d820651efeABA3"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-yellow border-4 border-black font-mono font-bold uppercase px-6 py-3 text-sm shadow-brutal-sm hover:translate-y-1 hover:translate-x-1 hover:shadow-none transition-all whitespace-nowrap text-center"

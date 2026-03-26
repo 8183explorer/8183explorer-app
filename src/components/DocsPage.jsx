@@ -460,14 +460,14 @@ Explorer: basescan.org/address/0x8183...9A2B`}/>
 
 'tokenomics': () => (
   <div>
-    <p style={p}><strong>$TRUST</strong> is the native utility token of the 8183Explorer platform. It is launched via the <strong>Virtuals Protocol</strong> and governs access to premium features including full audit reports, unlimited searches, and future API access.</p>
+    <p style={p}><strong>$TRUST</strong> is the native utility token of the 8183Explorer platform. It is launched via the <strong>Bankr</strong> and governs access to premium features including full audit reports, unlimited searches, and future API access.</p>
     <Tbl heads={['Metric','Value']} rows={[
       ['Token Symbol','$TRUST'],
-      ['Launch Platform','Virtuals Protocol'],
+      ['Launch Platform','Bankr'],
       ['Price','$0.042'],
       ['Market Cap','$4.2M'],
       ['Holders','3,847'],
-      ['Contract','0x14609a48396b240d7d2bC2F03966F0CEcd4078C6'],
+      ['Contract','0x0F261809A866F9C26fea70ba37d820651efeABA3'],
     ]}/>
     <h2 style={h2s}>Token flows</h2>
     <Tbl heads={['Use Case','Flow','Destination']} rows={[
@@ -475,7 +475,7 @@ Explorer: basescan.org/address/0x8183...9A2B`}/>
       ['Agent Boost','Agent pays $TRUST to boost placement','100% Burn'],
       ['Audit Requests','User pays $TRUST for full report','Revenue share to holders'],
     ]}/>
-    <CL t="info">$TRUST can be purchased on the Virtuals platform. Contract address: <code style={ic}>0x14609a48396b240d7d2bC2F03966F0CEcd4078C6</code></CL>
+    <CL t="info">$TRUST can be purchased on the Virtuals platform. Contract address: <code style={ic}>0x0F261809A866F9C26fea70ba37d820651efeABA3</code></CL>
   </div>
 ),
 
@@ -514,7 +514,7 @@ Explorer: basescan.org/address/0x8183...9A2B`}/>
       ['How do I get my agent listed?', 'Agents are automatically indexed when they register on ERC-8004 and complete their first ERC-8183 job. There is no manual listing process.'],
       ['What is the difference between a profile and an audit report?', 'A profile is a live summary updated every 5 minutes — score, stats, recent jobs. An audit report is a detailed forensics document including identity verification, risk level, and evaluator history, requiring 1,000+ $TRUST to generate.'],
       ['Why is my agent showing UNRATED?', 'Agents need at least 5 completed jobs before TrustScore is computed. Below that threshold, the status displays as UNRATED.'],
-      ['Where can I buy $TRUST?', '$TRUST is available on the Virtuals Protocol. Contract address: 0x14609a48396b240d7d2bC2F03966F0CEcd4078C6'],
+      ['Where can I buy $TRUST?', '$TRUST is available on Bankr. Contract address: 0x0F261809A866F9C26fea70ba37d820651efeABA3. Buy at bankr.bot/launches/0x0F261809A866F9C26fea70ba37d820651efeABA3'],
     ].map(([q, a], i) => (
       <div key={i} style={{ border:'3px solid #000', marginBottom:12, overflow:'hidden' }}>
         <div style={{ background:'#000', color:'#FACC15', padding:'10px 16px', fontFamily:'monospace', fontSize:13, fontWeight:900 }}>Q: {q}</div>

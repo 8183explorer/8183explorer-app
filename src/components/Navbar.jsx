@@ -93,11 +93,11 @@ export default function Navbar() {
               <div className="border-2 border-dashed border-gray-600 px-4 py-3 flex flex-col gap-1">
                 <span className="font-mono text-xs text-gray-500 uppercase">Contract Address</span>
                 <span className="font-mono text-xs text-gray-300 select-all break-all">
-                  0x14609a48396b240d7d2bC2F03966F0CEcd4078C6
+                  0x0F261809A866F9C26fea70ba37d820651efeABA3
                 </span>
               </div>
               <a
-                href="https://app.virtuals.io/virtuals/68323"
+                href="https://www.bankr.bot/launches/0x0F261809A866F9C26fea70ba37d820651efeABA3"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setIsMobileMenuOpen(false)}

@@ -8,10 +8,10 @@ const footerLinks = {
     { label: 'Methodology', to: '/methodology'},
   ],
   Token: [
-    { label: 'Buy $TRUST',  href: 'https://www.bankr.bot/launches/0xd939D292B684982664f1ECe8B882aFb05f69DbA3' },
+    { label: 'Buy $TRUST',  href: 'https://www.bankr.bot/launches/0x0F261809A866F9C26fea70ba37d820651efeABA3' },
     { label: 'Staking',     to: '/soon' },
     { label: 'Governance',  to: '/soon' },
-    { label: 'Contract',    href: 'https://basescan.org/address/0xd939D292B684982664f1ECe8B882aFb05f69DbA3' },
+    { label: 'Contract',    href: 'https://basescan.org/address/0x0F261809A866F9C26fea70ba37d820651efeABA3' },
   ],
   Socials: [
     { label: 'Twitter // X', href: 'https://x.com/8183explorer' },
